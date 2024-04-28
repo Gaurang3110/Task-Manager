@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(4.png);
+      background-size: cover;
+    }
+    #all {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the main card horizontally */
+      flex-direction: row;
+      
+    }
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+    .main-card {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the main card horizontally */
+      flex-direction: row;
+      width: 850px;
+      height: 700px;
+      background-color: #2d72f0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 30px;
+    }
+    #prof {
+      height: 500px;
+      margin-right: 40px;
+      width: 300px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px; /* Adjusted padding */
+      margin-left: 50px;
+      margin-right: 35px;
+    }
+    .card {
+      width: 120%; /* Adjusted width to fit the container */
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px 0; /* Adjusted margin */
+    }
+    .profile-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .profile-info {
+      text-align: center;
+    }
+    h2, p {
+      margin: 5px 0;
+    }
+    .logout {
+      margin-top: 7px;
+      background-color: cornflowerblue;
+      margin-left: 30px;
+    }
+    h1{
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <center><h1>MY PROFILE</h1></center>
+  <div id="all">
+
+    <div class="main-card">
+
+      <div class="card" id="prof">
+
+        <img src="luffy.jpg" alt="Profile Picture" height=320" class="profile-img">
+        <div class="profile-info">
+          <h2>Luffy</h2>
+          <p>Email: luffy@gmail.com</p>
+          <p>Location: New World</p>
+          <p>Gender:Male</p>
+          <p>A student in IIITN and keeps the tracks of his studies and courses</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <h2>Task Completed</h2><br>
+          <ul style="list-style-type: square;">
+            <li><p>2 Task Completed</p></li>
+            <li><p>3 Task due</p></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Help and Support</h2>
+          <ul style="list-style-type: square;">
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Log Out</h2>
+          <a href="logout.html" class="btn">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
