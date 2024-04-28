@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="feedback.css">
+<title>Feedback</title>
+</head>
+<body>
+<div class="container">
+   
+    <div class="card">
+        <div class="card-header">Feedback Form</div><br>
+        <div class="card-body">
+            <form id="feedbackForm" action="#" method="POST">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback"></textarea><br><br>
+                <button type="submit" class="btn">Submit Feedback</button><br>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    alert("Feedback submitted");
+
+});
+</script>
+
+</body>
+</html>

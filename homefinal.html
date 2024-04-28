@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management HomePage</title>
+    <link rel="stylesheet" href="homefinal.css" />
+  </head>
+  <body>
+    <div class="task-manager">
+      <!-- left bar starts -->
+      <div class="left-bar">
+        <div class="upper-part">
+          <div class="actions">
+            <div class="circle"></div>
+            <div class="circle-2"></div>
+          </div>
+        </div>
+
+        <!-- left content starts -->
+        <div class="left-content">
+          <ul class="action-list">
+            <li class="item">
+              <img class="feather feather-inbox" src="svg/inbox.svg" alt="" />
+              <a href="homefinal.html"><span>Inbox</span></a>
+            </li>
+            <li class="item">
+              <img class="feather feather-star" src="svg/star.svg" alt="" />
+              <a href="addtask.html"><span>Add Tasks</span></a>
+            </li>
+            <li class="item">
+              <img class="feather feather-calendar" src="svg/calender.svg" alt="" />
+              <a href="https://www.bing.com/ck/a?!&&p=6ae40f3204ca425fJmltdHM9MTcxNDI2MjQwMCZpZ3VpZD0zZDBmYjE1Ny1mZmQ4LTY2YmMtMmE5Mi1hMmNiZmUwZDY3M2ImaW5zaWQ9NTIxNA&ptn=3&ver=2&hsh=3&fclid=3d0fb157-ffd8-66bc-2a92-a2cbfe0d673b&psq=google+calne&u=a1aHR0cHM6Ly9jYWxlbmRhci5nb29nbGUuY29tL2NhbGVuZGFy&ntb=1"><span>Calender</span></a>
+            </li>
+            <li class="item">
+              <img class="feather feather-sun" src="svg/sun.svg" alt="" />
+              <a href="profile.html"><span>Profile</span></a>
+            </li>
+            <li class="item">
+              <img class="feather feather-users" src="svg/users.svg" alt="" />
+              <a href="logout.html"><span>Logout</span></a>
+            </li>
+          </ul>
+
+          <ul class="category-list">
+            <li class="item">
+              <img class="feather feather-trending-up" src="svg/trending.svg" alt="" />
+              <a href="contactus.html"><span>Contact Us</span></a>
+            </li>
+            <li class="item">
+              <img class="feather feather-hash" src="svg/hash.svg" alt="" />
+              <a href="faq.html"><span>FAQs</span></a>
+            </li>
+            <li class="item">
+              <img class="feather feather-zap" src="svg/zap.svg" alt="" />
+              <a href="feedback.html"><span>Feedback</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- left content ends -->
+      </div>
+      <!--  -->
+      <!-- left bar ends -->
+
+      <!-- page content starts -->
+      <div class="page-content">
+        <div class="header">Today Tasks</div>
+        <!-- contnet categories starts -->
+        <div class="content-categories">
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-1" />
+            <label class="category" for="opt-1">All</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-2" checked />
+            <label class="category" for="opt-2">Important</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-3" />
+            <label class="category" for="opt-3">Notes</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-4" />
+            <label class="category" for="opt-4">Links</label>
+          </div>
+        </div>
+        <!--  -->
+        <!-- contemt categories ends -->
+        <!-- tasks wrapper starts -->
+        <div class="tasks-wrapper">
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-1" checked />
+            <label for="item-1">
+              <span class="label-text">Application Programming Project Submission</span>
+            </label>
+            <span class="tag approved">Done</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-2" checked />
+            <label for="item-2">
+              <span class="label-text">Data Structures Mini-Project</span>
+            </label>
+            <span class="tag progress">In Progress</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-3" />
+            <label for="item-3">
+              <span class="label-text">Preparation for End Sem</span>
+            </label>
+            <span class="tag review">Left</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-4" />
+            <label for="item-4">
+              <span class="label-text">Maths Assignment</span>
+            </label>
+            <span class="tag progress">In Progress</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-5" />
+            <label for="item-5">
+              <span class="label-text">Today's Leetcode</span>
+            </label>
+            <span class="tag approved">Done</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-6" />
+            <label for="item-6">
+              <span class="label-text">Wash Clothes</span>
+            </label>
+            <span class="tag review">Left</span>
+          </div>
+          <div class="header upcoming">Upcoming Tasks</div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-7" />
+            <label for="item-7">
+              <span class="label-text">CodeChef Starters Contest</span>
+            </label>
+            <span class="tag waiting">Waiting</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-8" />
+            <label for="item-8">
+              <span class="label-text">End Semester Date Sheet</span>
+            </label>
+            <span class="tag waiting">Waiting</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-9" />
+            <label for="item-9">
+              <span class="label-text">19 May Return Packing</span>
+            </label>
+            <span class="tag waiting">Waiting</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-10" />
+            <label for="item-10">
+              <span class="label-text">Digital Electronics Questions</span>
+            </label>
+            <span class="tag waiting">Waiting</span>
+          </div>
+        </div>
+        <!-- tasks wrapper ends -->
+      </div>
+      <!--  -->
+      <!-- page content ends -->
+
+      <!-- right bar starts -->
+      <div class="right-bar">
+        <div class="top-part">
+          <img class="feather feather-users" src="svg/users.svg" alt="" />
+          <div class="count">6</div>
+        </div>
+        <div class="header">Schedule</div>
+        <div class="right-content">
+          <div class="task-box yellow">
+            <div class="description-task">
+              <div class="time">09:00 - 10:00 AM</div>
+              <div class="task-name">EVS Lecture</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img src="images/img1.jpg" alt="member" />
+              <img src="images/img2.jpg" alt="member-2" />
+              <img src="images/img3.jpg" alt="member-3" />
+              <img src="images/img4.jpg" alt="member-4" />
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="time">10:00 - 11:00 AM</div>
+              <div class="task-name">Maths Tutorial</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img src="images/img5.jpg" alt="member" />
+              <img src="images/img6.jpg" alt="member-2" />
+              <img src="images/img7.jpg" alt="member-3" />
+            </div>
+          </div>
+          <div class="task-box red">
+            <div class="description-task">
+              <div class="time">01:00 - 02:00 PM</div>
+              <div class="task-name">DS Project</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img src="images/img1.jpg" alt="member" />
+              <img src="images/img2.jpg" alt="member-2" />
+              <img src="images/img3.jpg" alt="member-3" />
+              <img src="images/img4.jpg" alt="member-4" />
+            </div>
+          </div>
+          <div class="task-box green">
+            <div class="description-task">
+              <div class="time">03:00 - 04:00 PM</div>
+              <div class="task-name">AP Presentation</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img src="images/img5.jpg" alt="member" />
+              <img src="images/img6.jpg" alt="member-2" />
+              <img src="images/img7.jpg" alt="member-3" />
+              <img src="images/img8.jpg" alt="member-4" />
+              <img src="images/img9.jpg" alt="member-5" />
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="time">08:00 - 09:00 PM</div>
+              <div class="task-name">Codechef Contest</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img src="images/img5.jpg" alt="member" />
+              <img src="images/img6.jpg" alt="member-2" />
+              <img src="images/img7.jpg" alt="member-3" />
+              <img src="images/img8.jpg" alt="member-4" />
+              <img src="images/img9.jpg" alt="member-5" />
+            </div>
+          </div>
+          <div class="task-box yellow">
+            <div class="description-task">
+              <div class="time">11:00 - 12:00 PM</div>
+              <div class="task-name">Gaming Lobby</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img src="images/img1.jpg" alt="member" />
+              <img src="images/img2.jpg" alt="member-2" />
+              <img src="images/img3.jpg" alt="member-3" />
+              <img src="images/img4.jpg" alt="member-4" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right bar ends -->
+    </div>
+  </body>
+</html>

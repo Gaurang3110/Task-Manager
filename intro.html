@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <h1>
+                <div class="welcome-text">WELCOME TO<br> TASK MANAGEMENT WEBSITE</div><br>
+                <br><br>
+                <div class="sub-text">Organize<br>
+                    Manage<br>
+                    Get Your Life Set<br></div>
+            </h1>
+            <form action="login.php"> <!-- Changed action to login.html -->
+                <input type="submit" class="get-started-btn" value="Get Started">
+            </form>
+        </div>
+        <div class="image">
+            <img src="introbg.jpg" alt="Test Image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var getStartedButton = document.querySelector('.get-started-btn');
+            getStartedButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default form submission
+                window.location.href = this.form.action; // Redirect to login.html
+            });
+        });
+    </script>
+</body>
+</html>
